@@ -3,18 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Le Hub des IA : Guides, Réponses et Liens Officiels</title>
     <meta name="description" content="Toutes les réponses à vos questions sur ChatGPT, Gemini, Claude, Canva AI et Perplexity. Apprenez à les utiliser et accédez directement aux sites officiels.">
     
-    <!-- Balises Open Graph pour les partages sur les réseaux sociaux -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://lytechubedi.github.io/outils-ia/">
+    
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
     <meta property="og:title" content="Le Hub des IA - Guide Pratique Gratuit">
     <meta property="og:description" content="Maîtrisez les meilleures IA du moment grâce à notre foire aux questions complète et optimisée.">
-    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lytechubedi.github.io/outils-ia/">
+    <meta property="og:site_name" content="Hub des IA">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Comment utiliser ChatGPT gratuitement ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Il suffit de se rendre sur le site officiel via le bouton ci-dessous, de créer un compte gratuit avec votre adresse e-mail et de commencer à taper vos instructions dans la barre de discussion."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Est-ce que ChatGPT conserve mes données ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Par défaut, l'historique de vos conversations est enregistré pour permettre l'amélioration des modèles. Cependant, vous pouvez désactiver l'entraînement des données à tout moment dans les paramètres de confidentialité."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Quelle est la force principale de Google Gemini ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gemini excelle dans la recherche d'informations fraîches et en temps réel car il est nativement connecté au moteur de recherche de Google. Il s'intègre également très bien avec YouTube, Google Docs et Gmail."
+        }
+      }]
+    }
+    </script>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             line-height: 1.6; 
@@ -57,18 +90,11 @@
             margin-bottom: 25px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.02);
         }
-        h1 { 
-            color: #1a1a1a; 
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-        .intro { 
-            font-size: 1rem; 
-            color: #666; 
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .ia-section { 
+        h1 { color: #1a1a1a; font-size: 1.8rem; margin-bottom: 10px; }
+        .intro { font-size: 1rem; color: #666; max-width: 600px; margin: 0 auto; }
+        
+        /* Chagement sémantique : sections plus fortes pour Google */
+        section { 
             background: white; 
             padding: 25px; 
             margin-bottom: 25px; 
@@ -91,24 +117,9 @@
             border-radius: 0 8px 8px 0;
             margin-bottom: 20px;
         }
-        .faq-box { 
-            margin-top: 15px; 
-        }
-        .question { 
-            font-weight: bold; 
-            color: #2c3e50; 
-            margin-top: 15px; 
-            font-size: 1.05rem;
-        }
-        .reponse { 
-            margin-bottom: 15px; 
-            color: #4f5d73; 
-            text-align: justify;
-        }
-        .btn-container {
-            text-align: right;
-            margin-top: 15px;
-        }
+        .question { font-weight: bold; color: #2c3e50; margin-top: 15px; font-size: 1.05rem; }
+        .reponse { margin-bottom: 15px; color: #4f5d73; text-align: justify; }
+        .btn-container { text-align: right; margin-top: 15px; }
         .btn-officiel { 
             display: inline-block; 
             background-color: #28a745; 
@@ -118,30 +129,14 @@
             border-radius: 6px; 
             font-weight: bold; 
             font-size: 0.95rem;
-            transition: background 0.2s ease;
         }
-        .btn-officiel:hover { 
-            background-color: #218838; 
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #888;
-            font-size: 0.85rem;
-        }
-        .politique-lien {
-            color: #0056b3;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .politique-lien:hover {
-            text-decoration: underline;
-        }
+        .btn-officiel:hover { background-color: #218838; }
+        footer { text-align: center; padding: 20px; color: #888; font-size: 0.85rem; }
+        .politique-lien { color: #0056b3; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <!-- Menu de Navigation Principal -->
     <nav class="main-nav">
         <a href="index.html">Accueil</a>
         <a href="apropos.html">À propos</a>
@@ -154,95 +149,92 @@
         <p class="intro">Trouvez des réponses rapides aux questions fréquentes et accédez directement aux plateformes officielles.</p>
     </header>
 
-    <!-- SECTION 1 : CHATGPT -->
-    <div class="ia-section">
-        <h2 class="ia-title">1. ChatGPT (OpenAI)</h2>
-        <p class="meta-desc">Description officielle : A conversational AI system that listens, learns, and challenges.</p>
-        
-        <div class="faq-box">
-            <p class="question">💡 Comment utiliser ChatGPT gratuitement ?</p>
-            <p class="reponse">Il suffit de se rendre sur le site officiel via le bouton ci-dessous, de créer un compte gratuit avec votre adresse e-mail et de commencer à taper vos instructions dans la barre de discussion.</p>
+    <main>
+        <section>
+            <h2 class="ia-title">1. ChatGPT (OpenAI)</h2>
+            <p class="meta-desc">Description officielle : A conversational AI system that listens, learns, and challenges.</p>
             
-            <p class="question">💡 Est-ce que ChatGPT conserve mes données ?</p>
-            <p class="reponse">Par défaut, l'historique de vos conversations est enregistré pour permettre l'amélioration des modèles. Cependant, vous pouvez désactiver l'entraînement des données à tout moment dans les paramètres de confidentialité de votre compte.</p>
-        </div>
-        
-        <div class="btn-container">
-            <a href="https://chatgpt.com" target="_blank" class="btn-officiel">Ouvrir ChatGPT (Site Officiel)</a>
-        </div>
-    </div>
+            <div class="faq-box">
+                <p class="question">💡 Comment utiliser ChatGPT gratuitement ?</p>
+                <p class="reponse">Il suffit de se rendre sur le site officiel via le bouton ci-dessous, de créer un compte gratuit avec votre adresse e-mail et de commencer à taper vos instructions dans la barre de discussion.</p>
+                
+                <p class="question">💡 Est-ce que ChatGPT conserve mes données ?</p>
+                <p class="reponse">Par défaut, l'historique de vos conversations est enregistré pour permettre l'amélioration des modèles. Cependant, vous pouvez désactiver l'entraînement des données à tout moment dans les paramètres de confidentialité de votre compte.</p>
+            </div>
+            
+            <div class="btn-container">
+                <a href="https://chatgpt.com" target="_blank" class="btn-officiel">Ouvrir ChatGPT (Site Officiel)</a>
+            </div>
+        </section>
 
-    <!-- SECTION 2 : GOOGLE GEMINI -->
-    <div class="ia-section">
-        <h2 class="ia-title">2. Google Gemini</h2>
-        <p class="meta-desc">Description officielle : Votre assistant IA direct connecté aux connaissances et aux services de l'écosystème Google.</p>
-        
-        <div class="faq-box">
-            <p class="question">💡 Quelle est la force principale de Gemini ?</p>
-            <p class="reponse">Gemini excelle dans la recherche d'informations fraîches et en temps réel car il est nativement connecté au moteur de recherche de Google. Il s'intègre également très bien avec YouTube, Google Docs et Gmail pour analyser vos fichiers.</p>
+        <section>
+            <h2 class="ia-title">2. Google Gemini</h2>
+            <p class="meta-desc">Description officielle : Votre assistant IA direct connecté aux connaissances et aux services de l'écosystème Google.</p>
             
-            <p class="question">💡 Gemini est-il disponible sur mobile ?</p>
-            <p class="reponse">Oui, Gemini est accessible directement depuis n'importe quel navigateur mobile et dispose d'une application dédiée sur Android et iOS, pouvant même remplacer l'assistant vocal par défaut de votre téléphone.</p>
-        </div>
-        
-        <div class="btn-container">
-            <a href="https://gemini.google.com" target="_blank" class="btn-officiel">Ouvrir Gemini (Site Officiel)</a>
-        </div>
-    </div>
+            <div class="faq-box">
+                <p class="question">💡 Quelle est la force principale de Gemini ?</p>
+                <p class="reponse">Gemini excelle dans la recherche d'informations fraîches et en temps réel car il est nativement connecté au moteur de recherche de Google. Il s'intègre également très bien avec YouTube, Google Docs et Gmail pour analyser vos fichiers.</p>
+                
+                <p class="question">💡 Gemini est-il disponible sur mobile ?</p>
+                <p class="reponse">Oui, Gemini est accessible directement depuis n'importe quel navigateur mobile et dispose d'une application dédiée sur Android et iOS, pouvant même remplacer l'assistant vocal par défaut de votre téléphone.</p>
+            </div>
+            
+            <div class="btn-container">
+                <a href="https://gemini.google.com" target="_blank" class="btn-officiel">Ouvrir Gemini (Site Officiel)</a>
+            </div>
+        </section>
 
-    <!-- SECTION 3 : CLAUDE -->
-    <div class="ia-section">
-        <h2 class="ia-title">3. Claude (Anthropic)</h2>
-        <p class="meta-desc">Description officielle : Un modèle d'intelligence artificielle avancé, spécialisé dans le raisonnement profond, la rédaction fluide et l'analyse de code informatique.</p>
-        
-        <div class="faq-box">
-            <p class="question">💡 Pourquoi utiliser Claude à la place d'autres IA ?</p>
-            <p class="reponse">Claude est particulièrement reconnu pour sa capacité à analyser de très longs documents (comme des livres entiers ou des fichiers de code complexes) et pour son style de rédaction particulièrement humain, nuancé et fluide.</p>
+        <section>
+            <h2 class="ia-title">3. Claude (Anthropic)</h2>
+            <p class="meta-desc">Description officielle : Un modèle d'intelligence artificielle avancé, spécialisé dans le raisonnement profond, la rédaction fluide et l'analyse de code informatique.</p>
             
-            <p class="question">💡 Claude est-il gratuit ?</p>
-            <p class="reponse">Oui, Anthropic propose un accès gratuit à son modèle standard sur son site web. Il existe une formule payante (Claude Pro) pour débloquer des limites d'utilisation quotidiennes plus élevées et accéder aux modèles de recherche de pointe.</p>
-        </div>
-        
-        <div class="btn-container">
-            <a href="https://claude.ai" target="_blank" class="btn-officiel">Ouvrir Claude (Site Officiel)</a>
-        </div>
-    </div>
+            <div class="faq-box">
+                <p class="question">💡 Pourquoi utiliser Claude à la place d'autres IA ?</p>
+                <p class="reponse">Claude est particulièrement reconnu pour sa capacité à analyser de très longs documents (comme des livres entiers ou des fichiers de code complexes) et pour son style de rédaction particulièrement humain, nuancé et fluide.</p>
+                
+                <p class="question">💡 Claude est-il gratuit ?</p>
+                <p class="reponse">Oui, Anthropic propose un accès gratuit à son modèle standard sur son site web. Il existe une formule payante (Claude Pro) pour débloquer des limites d'utilisation quotidiennes plus élevées et accéder aux modèles de recherche de pointe.</p>
+            </div>
+            
+            <div class="btn-container">
+                <a href="https://claude.ai" target="_blank" class="btn-officiel">Ouvrir Claude (Site Officiel)</a>
+            </div>
+        </section>
 
-    <!-- SECTION 4 : CANVA AI -->
-    <div class="ia-section">
-        <h2 class="ia-title">4. Canva AI (Studio Magique)</h2>
-        <p class="meta-desc">Description officielle : Des outils visuels basés sur l'intelligence artificielle pour concevoir, générer des images et automatiser vos designs en un clic.</p>
-        
-        <div class="faq-box">
-            <p class="question">💡 Comment générer une image avec l'IA de Canva ?</p>
-            <p class="reponse">Dans votre espace de travail Canva, ouvrez l'outil "Du texte à l'image" présent dans le Studio Magique. Décrivez précisément la scène que vous imaginez en quelques mots, choisissez un style graphique (photo, 3D, dessin animée), et l'IA génère le visuel instantanément.</p>
+        <section>
+            <h2 class="ia-title">4. Canva AI (Studio Magique)</h2>
+            <p class="meta-desc">Description officielle : Des outils visuels basés sur l'intelligence artificielle pour concevoir, générer des images et automatiser vos designs en un clic.</p>
             
-            <p class="question">💡 Les images générées sur Canva sont-elles libres de droits ?</p>
-            <p class="reponse">Oui, Canva vous permet d'utiliser les contenus générés par ses outils d'IA pour des projets personnels ou commerciaux. Il convient toutefois de respecter les conditions d'utilisation globales des plateformes où vous publiez.</p>
-        </div>
-        
-        <div class="btn-container">
-            <a href="https://www.canva.com" target="_blank" class="btn-officiel">Ouvrir Canva AI (Site Officiel)</a>
-        </div>
-    </div>
+            <div class="faq-box">
+                <p class="question">💡 Comment générer une image avec l'IA de Canva ?</p>
+                <p class="reponse">Dans votre espace de travail Canva, ouvrez l'outil "Du texte à l'image" présent dans le Studio Magique. Décrivez précisément la scène que vous imaginez en quelques mots, choisissez un style graphique (photo, 3D, dessin animée), et l'IA génère le visuel instantanément.</p>
+                
+                <p class="question">💡 Les images générées sur Canva sont-elles libres de droits ?</p>
+                <p class="reponse">Oui, Canva vous permet d'utiliser les contenus générés par ses outils d'IA pour des projets personnels ou commerciaux. Il convient toutefois de respecter les conditions d'utilisation globales des plateformes où vous publiez.</p>
+            </div>
+            
+            <div class="btn-container">
+                <a href="https://www.canva.com" target="_blank" class="btn-officiel">Ouvrir Canva AI (Site Officiel)</a>
+            </div>
+        </section>
 
-    <!-- SECTION 5 : PERPLEXITY -->
-    <div class="ia-section">
-        <h2 class="ia-title">5. Perplexity AI</h2>
-        <p class="meta-desc">Description officielle : Un moteur de recherche conversationnel qui répond directement à vos questions en citant ses sources sur Internet en temps réel.</p>
-        
-        <div class="faq-box">
-            <p class="question">💡 Quelle est la différence entre Perplexity et Google ?</p>
-            <p class="reponse">Au lieu de vous donner une simple liste de liens bleus sur lesquels cliquer, Perplexity explore le web à votre place, lit les articles pertinents, rédige un résumé textuel complet de la réponse et ajoute des sources claires pour chaque fait énoncé.</p>
+        <section>
+            <h2 class="ia-title">5. Perplexity AI</h2>
+            <p class="meta-desc">Description officielle : Un moteur de recherche conversationnel qui répond directement à vos questions en citant ses sources sur Internet en temps réel.</p>
             
-            <p class="question">💡 Les réponses de Perplexity sont-elles fiables ?</p>
-            <p class="reponse">L'IA se basant sur des sites web réels existants, elle est généralement très précise pour suivre l'actualité. Il reste recommandé de cliquer sur les petites sources numérotées pour vérifier l'exactitude de l'article d'origine si la donnée est critique.</p>
-        </div>
-        
-        <div class="btn-container">
-            <a href="https://www.perplexity.ai" target="_blank" class="btn-officiel">Ouvrir Perplexity (Site Officiel)</a>
-        </div>
-    </div>
+            <div class="faq-box">
+                <p class="question">💡 Quelle est la différence entre Perplexity et Google ?</p>
+                <p class="reponse">Au lieu de vous donner une simple liste de liens bleus sur lesquels cliquer, Perplexity explore le web à votre place, lit les articles pertinents, rédige un résumé textuel complet de la réponse et ajoute des sources claires pour chaque fait énoncé.</p>
+                
+                <p class="question">💡 Les réponses de Perplexity sont-elles fiables ?</p>
+                <p class="reponse">L'IA se basant sur des sites web réels existants, elle est généralement très précise pour suivre l'actualité. Il reste recommandé de cliquer sur les petites sources numérotées pour vérifier l'exactitude de l'article d'origine si la donnée est critique.</p>
+            </div>
+            
+            <div class="btn-container">
+                <a href="https://www.perplexity.ai" target="_blank" class="btn-officiel">Ouvrir Perplexity (Site Officiel)</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Hub des IA. Tous droits réservés. | <a href="politique.html" class="politique-lien">Politique de Confidentialité</a></p>
