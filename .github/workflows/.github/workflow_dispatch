@@ -1,0 +1,30 @@
+name: Mise à jour automatique du Hub
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Se réveille tous les jours à minuit pile
+  workflow_dispatch: # Permet aussi de le lancer manuellement en 1 clic
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Récupérer le code du dépôt
+      uses: actions/checkout@v3
+
+    - name: Installer Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Executer le script de mise à jour
+      run: python update_faq.py
+
+    - name: Sauvegarder et publier les changements sur le site
+      run: |
+        git config --global user.name 'HubBot'
+        git config --global user.email 'bot@hubia.com'
+        git add index.html
+        git commit -m "Mise à jour automatique des FAQ" || exit 0
+        git push
+
