@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Indique aux moteurs de recherche où se trouve la carte du site
+Sitemap: https://lytechubedi.github.io/outils-ia/sitemap.xml
+
