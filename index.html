@@ -6,15 +6,12 @@
     <title>Le Hub des IA : Guides, Réponses et Liens Officiels</title>
     <meta name="description" content="Toutes les réponses à vos questions sur ChatGPT, Gemini, Claude, Canva AI et Perplexity. Apprenez à les utiliser et accédez directement aux sites officiels.">
     
+    <!-- Balises Open Graph pour les partages sur les réseaux sociaux -->
     <meta property="og:title" content="Le Hub des IA - Guide Pratique Gratuit">
     <meta property="og:description" content="Maîtrisez les meilleures IA du moment grâce à notre foire aux questions complète et optimisée.">
     <meta property="og:type" content="website">
 
     <style>
-        .main-nav { display: flex; justify-content: center; background: #0056b3; padding: 10px; border-radius: 8px; margin-bottom: 20px; }
-.main-nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.95rem; }
-.main-nav a:hover { text-decoration: underline; }
-
         * {
             box-sizing: border-box;
         }
@@ -27,6 +24,31 @@
             padding: 15px; 
             background-color: #f4f6f9; 
         }
+        
+        /* Menu de Navigation */
+        .main-nav { 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap;
+            background: #0056b3; 
+            padding: 12px; 
+            border-radius: 8px; 
+            margin-bottom: 25px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .main-nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin: 5px 15px; 
+            font-weight: bold; 
+            font-size: 0.95rem;
+            transition: opacity 0.2s ease;
+        }
+        .main-nav a:hover { 
+            opacity: 0.8;
+            text-decoration: underline; 
+        }
+
         header {
             text-align: center;
             padding: 30px 10px;
@@ -110,23 +132,29 @@
         .politique-lien {
             color: #0056b3;
             text-decoration: none;
+            font-weight: bold;
+        }
+        .politique-lien:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <nav class="main-nav">
-    <a href="index.html">Accueil</a>
-    <a href="apropos.html">À propos</a>
-    <a href="contact.html">Contact</a>
-    <a href="politique.html">Confidentialité</a>
-</nav>
 
+    <!-- Menu de Navigation Principal -->
+    <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="politique.html">Confidentialité</a>
+    </nav>
 
     <header>
         <h1>Le Hub Guide des Intelligences Artificielles</h1>
         <p class="intro">Trouvez des réponses rapides aux questions fréquentes et accédez directement aux plateformes officielles.</p>
     </header>
 
+    <!-- SECTION 1 : CHATGPT -->
     <div class="ia-section">
         <h2 class="ia-title">1. ChatGPT (OpenAI)</h2>
         <p class="meta-desc">Description officielle : A conversational AI system that listens, learns, and challenges.</p>
@@ -144,6 +172,7 @@
         </div>
     </div>
 
+    <!-- SECTION 2 : GOOGLE GEMINI -->
     <div class="ia-section">
         <h2 class="ia-title">2. Google Gemini</h2>
         <p class="meta-desc">Description officielle : Votre assistant IA direct connecté aux connaissances et aux services de l'écosystème Google.</p>
@@ -161,6 +190,7 @@
         </div>
     </div>
 
+    <!-- SECTION 3 : CLAUDE -->
     <div class="ia-section">
         <h2 class="ia-title">3. Claude (Anthropic)</h2>
         <p class="meta-desc">Description officielle : Un modèle d'intelligence artificielle avancé, spécialisé dans le raisonnement profond, la rédaction fluide et l'analyse de code informatique.</p>
@@ -178,6 +208,7 @@
         </div>
     </div>
 
+    <!-- SECTION 4 : CANVA AI -->
     <div class="ia-section">
         <h2 class="ia-title">4. Canva AI (Studio Magique)</h2>
         <p class="meta-desc">Description officielle : Des outils visuels basés sur l'intelligence artificielle pour concevoir, générer des images et automatiser vos designs en un clic.</p>
@@ -195,6 +226,7 @@
         </div>
     </div>
 
+    <!-- SECTION 5 : PERPLEXITY -->
     <div class="ia-section">
         <h2 class="ia-title">5. Perplexity AI</h2>
         <p class="meta-desc">Description officielle : Un moteur de recherche conversationnel qui répond directement à vos questions en citant ses sources sur Internet en temps réel.</p>
@@ -213,7 +245,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Hub des IA. Tous droits réservés. | <a href="#" class="politique-lien">Politique de Confidentialité</a></p>
+        <p>&copy; 2026 Hub des IA. Tous droits réservés. | <a href="politique.html" class="politique-lien">Politique de Confidentialité</a></p>
     </footer>
 
 </body>
